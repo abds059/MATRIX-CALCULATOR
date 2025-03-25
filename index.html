@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATRIX CALCULATOR</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .matrices {
+            display: grid;
+            grid-template-columns: repeat(2, 60px);
+            padding: 23px;
+            border: 2px solid var(--primary-color);
+        }
+    </style>
 </head>
+
 <body>
-    <div class="header">
+    <header>
         <nav class="navbar">
             <h1>MATRIX CALCULATOR</h1>
-            <div class="options">
-                <ul>
-                    <li><a href="index.html">2 X 2</a></li>
-                    <li><a href="3x3.html">3 X 3</a></li>
-                    <li><a href="4x4.html">4 X 4</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="index.html">2 X 2</a></li>
+                <li><a href="3x3.html">3 X 3</a></li>
+                <li><a href="4x4.html">4 X 4</a></li>
+            </ul>
         </nav>
-    </div>
+    </header>
 
     <div class="main">
         <h2>MATRIX 2x2</h2>
         <h3>Enter your value</h3>
         <div class="matrix-container">
-            <div class="matrix-1">
+            <p>Matrix 1</p>
+            <div class="matrices" id="matrix-1">
                 <input type="number" id="">
                 <input type="number" id="">
                 <input type="number" id="">
                 <input type="number" id="">
             </div>
-            <div class="matrix-2">
+            <p>Matrix 2</p>
+            <div class="matrices" id="matrix-2">
+                <input type="number" id="">
+                <input type="number" id="">
+                <input type="number" id="">
+                <input type="number" id="">
+            </div>
+
+            <p>Result</p>
+            <div class="matrices" id="result">
                 <input type="number" id="">
                 <input type="number" id="">
                 <input type="number" id="">
@@ -47,4 +65,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
