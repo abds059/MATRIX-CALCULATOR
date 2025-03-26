@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIX CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .matrices{
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    padding: 23px;
+    grid-gap: 5px;
+    border: 2px solid var(--primary-color);
+    /* margin-top: 23px; */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>MATRIX CALCULATOR</h1>
+                <ul>
+                    <li><a href="index.html" class="nav-link">2 X 2</a></li>
+                    <li><a href="3x3.html" class="nav-link">3 X 3</a></li>
+                    <li><a href="4x4.html" class="nav-link">4 X 4</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h2>MATRIX 4x4</h2>
+        <h3>Enter your value</h3>
+        <div class="matrix-container">
+            <p>Matrix 1</p>
+            <div class="matrices" id="matrix-2">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+                <input type="number" class="matrix1-input">
+            </div>
+            <p>Matrix 2</p>
+            <div class="matrices" id="matrix-2">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+                <input type="number" class="matrix2-input">
+            </div>
+
+            <p>Result</p>
+            <div class="matrices" id="result">
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+                <input type="number" class="result-input" readonly>
+            </div>
+
+            <div class="buttons">
+                <button class="btn" id="add">Add</button>
+                <button class="btn" id="subtract">Subtract</button>
+                <button class="btn" id="multiply">Multiply</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
